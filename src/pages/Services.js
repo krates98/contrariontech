@@ -11,6 +11,7 @@ const Services = () => {
   return (
     <div className="services-container">
       <h2 className="services-heading">Services We Offer</h2>
+      //container
       <div className="services container">
         <div className="service-box">
           <div className="service-icon">
