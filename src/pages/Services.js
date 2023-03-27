@@ -11,7 +11,23 @@ const Services = () => {
   return (
     <div className="services-container">
       <h2 className="services-heading">Services We Offer</h2>
-      <div className="services">
+      <div className="services container">
+        <div className="service-box">
+          <div className="service-icon">
+            <FontAwesomeIcon color="green" icon={faUser} size="4x" />
+          </div>
+          <div className="service-details">
+            <h3>Market Making</h3>
+            <p>
+              At Contrarian Technologies, we offer market-making services to
+              help our clients improve the liquidity of their tokens and coins.
+              Our experienced team uses advanced algorithms to provide
+              competitive prices for both buyers and sellers, which not only
+              increases trading volumes but also improves the market's overall
+              efficiency.
+            </p>
+          </div>
+        </div>
         <div className="service-box">
           <div className="service-icon">
             <FontAwesomeIcon color="green" icon={faGlobe} size="4x" />
@@ -39,8 +55,7 @@ const Services = () => {
               public relations services to help crypto projects gain visibility
               and attract a wider audience. Our team of experienced
               professionals creates customized marketing strategies tailored to
-              the unique needs and goals of each project, using a combination of
-              traditional and digital marketing techniques.
+              the unique needs and goals of each project.
             </p>
           </div>
         </div>
@@ -56,22 +71,6 @@ const Services = () => {
               industry. Our team of legal experts provides comprehensive legal
               advisory services to crypto projects, including onshore and
               offshore company registration, legal opinions, and licenses.
-            </p>
-          </div>
-        </div>
-        <div className="service-box">
-          <div className="service-icon">
-            <FontAwesomeIcon color="green" icon={faUser} size="4x" />
-          </div>
-          <div className="service-details">
-            <h3>Market Making</h3>
-            <p>
-              At Contrarian Technologies, we offer market-making services to
-              help our clients improve the liquidity of their tokens and coins.
-              Our experienced team uses advanced algorithms to provide
-              competitive prices for both buyers and sellers, which not only
-              increases trading volumes but also improves the market's overall
-              efficiency.
             </p>
           </div>
         </div>
