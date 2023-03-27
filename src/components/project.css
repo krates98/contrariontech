@@ -1,0 +1,49 @@
+.projects {
+  width: 100%;
+  background-color: #222222;
+  color: #ffffff;
+  text-align: center;
+}
+
+.padCard {
+  padding: 40px;
+}
+
+.project-card {
+  background-color: #444444;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 30px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.return-card {
+  background-color: #044e27;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 30px 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.return-card h2,
+.project-card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.return-card .countNum,
+.project-card .countNum {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .project-card {
+    margin-bottom: 40px;
+  }
+}
