@@ -13,7 +13,7 @@ const Projects = () => {
               <CountUp
                 className="countNum"
                 start={1}
-                end={150}
+                end={50}
                 duration={4}
                 suffix="M+"
               />
@@ -25,7 +25,7 @@ const Projects = () => {
               <CountUp
                 className="countNum"
                 start={1}
-                end={50}
+                end={100}
                 duration={4}
                 suffix="+"
               />
@@ -37,7 +37,7 @@ const Projects = () => {
               <CountUp
                 className="countNum"
                 start={1}
-                end={500}
+                end={50}
                 duration={4}
                 suffix="+"
               />
@@ -51,7 +51,7 @@ const Projects = () => {
               <CountUp
                 className="countNum"
                 start={1}
-                end={500}
+                end={5}
                 duration={4}
                 prefix="$"
                 suffix="M+"
