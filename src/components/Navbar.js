@@ -3,6 +3,7 @@ import { Navbar, Nav, Image } from "react-bootstrap";
 import { FaBars } from "react-icons/fa";
 import logo from "../images/logo.png";
 import DemoRequestModal from "../pages/DemoRequestModal"; // Import the DemoRequestModal component
+import mmplans from "../images/mmplans.pdf";
 import "./styles.css";
 
 function TransparentNavbar() {
@@ -62,6 +63,7 @@ function TransparentNavbar() {
               Request A Demo
             </Nav.Link>
             <Nav.Link onClick={() => openModal("Contact Us")}>Contact</Nav.Link>
+            <Nav.Link href={mmplans}>Our Plans</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </div>
