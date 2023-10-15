@@ -5,3 +5,17 @@
   height: 50px;
   width: auto;
 }
+
+/* Add hover styles for Navbar links */
+.navbar-custom .nav-link {
+  color: white; /* Set the default text color */
+  font-size: 16px; /* Set the default font size */
+  transition: all 0.3s ease; /* Smooth transition effect for all properties */
+}
+
+.navbar-custom .nav-link:hover {
+  color: rgb(255, 255, 255); /* Change the text color to red on hover */
+  font-size: 18px; /* Increase the font size on hover */
+  background-color: rgb(4, 163, 73); /* Background color for the hover effect */
+  border-radius: 4px; /* Add a slight border-radius for a rounded rectangle effect */
+}

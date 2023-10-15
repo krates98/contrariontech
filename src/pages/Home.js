@@ -1,28 +1,28 @@
 import React from "react";
-import "animate.css";
 
 const Home = () => {
   return (
-    <div className="back-height">
-      <div className="center-text center-box">
-        <h1 className="animate__animated animate__slideInLeft">
-          Market <span>Making</span>
-        </h1>
-        <p className="animate__animated animate__slideInRight">
-          Contrarian Technologies is a Crypto focused services provider helping
-          crypto projects to achieve their short and long term goals.
-        </p>
+    <div className="home-container">
+      <div className="back-height">
+        <div className="center-text center-box">
+          <h1 className="animate__animated animate__slideInLeft">
+            WELCOME to <span>Contrarion</span> Technologies
+          </h1>
+          <p className="animate__animated animate__slideInRight">
+            Your Gateway to Success in the Emerging Crypto World
+          </p>
+        </div>
       </div>
-      <div class="lights-container">
-        <div class="light x1"></div>
-        <div class="light x2"></div>
-        <div class="light x3"></div>
-        <div class="light x4"></div>
-        <div class="light x5"></div>
-        <div class="light x6"></div>
-        <div class="light x7"></div>
-        <div class="light x8"></div>
-        <div class="light x9"></div>
+      <div className="lights-container">
+        <div className="light x1"></div>
+        <div className="light x2"></div>
+        <div className="light x3"></div>
+        <div className="light x4"></div>
+        <div className="light x5"></div>
+        <div className="light x6"></div>
+        <div className="light x7"></div>
+        <div className="light x8"></div>
+        <div className="light x9"></div>
       </div>
     </div>
   );

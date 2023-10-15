@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGlobe,
@@ -7,76 +7,126 @@ import {
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 
-const Services = () => {
-  return (
-    <div className="services-container">
-      <h2 className="services-heading">Services We Offer</h2>
-      //container
-      <div className="services container">
-        <div className="service-box">
-          <div className="service-icon">
-            <FontAwesomeIcon color="green" icon={faUser} size="4x" />
-          </div>
-          <div className="service-details">
-            <h3>Market Making</h3>
-            <p>
-              At Contrarian Technologies, we offer market-making services to
-              help our clients improve the liquidity of their tokens and coins.
-              Our experienced team uses advanced algorithms to provide
-              competitive prices for both buyers and sellers, which not only
-              increases trading volumes but also improves the market's overall
-              efficiency.
-            </p>
-          </div>
-        </div>
-        <div className="service-box">
-          <div className="service-icon">
-            <FontAwesomeIcon color="green" icon={faGlobe} size="4x" />
-          </div>
-          <div className="service-details ">
-            <h3>Exchange Listing</h3>
-            <p>
-              At Contrarian Technologies, we offer comprehensive exchange
-              listing services to help your crypto project gain visibility and
-              liquidity. Our team works closely with top-tier exchanges to
-              ensure a seamless and successful listing process, and we provide
-              ongoing support to help you maximize your exposure and trading
-              volumes.
-            </p>
-          </div>
-        </div>
-        <div className="service-box">
-          <div className="service-icon">
-            <FontAwesomeIcon color="green" icon={faBullseye} size="4x" />
-          </div>
-          <div className="service-details">
-            <h3>Marketing &amp; PR</h3>
-            <p>
-              Contrarian Technologies provides comprehensive marketing and
-              public relations services to help crypto projects gain visibility
-              and attract a wider audience. Our team of experienced
-              professionals creates customized marketing strategies tailored to
-              the unique needs and goals of each project.
-            </p>
-          </div>
-        </div>
-        <div className="service-box">
-          <div className="service-icon">
-            <FontAwesomeIcon color="green" icon={faGavel} size="4x" />
-          </div>
-          <div className="service-details">
-            <h3>Legal Advisory</h3>
-            <p>
-              At Contrarian Technologies, we understand the importance of
-              navigating the legal and regulatory landscape in the crypto
-              industry. Our team of legal experts provides comprehensive legal
-              advisory services to crypto projects, including onshore and
-              offshore company registration, legal opinions, and licenses.
-            </p>
-          </div>
-        </div>
-      </div>
+// Define your modal component
+const WhyChooseUsModal = ({ show, onClose }) => {
+  // Define the content of your modal here
+  const modalContent = (
+    <div className="modal-content why-choose-us-modal">
+      <span className="close-button" onClick={onClose}>
+        &times;
+      </span>
+      <h2>Why Choose Us?</h2>
+      <ul>
+        <li>
+          <strong>Experience:</strong> With years of experience in the crypto
+          industry, we understand the nuances of the market. We've successfully
+          supported numerous projects, from ICOs to DeFi platforms and
+          exchanges.
+        </li>
+        <li>
+          <strong>Proven Results:</strong> Our track record speaks for itself.
+          We've helped projects achieve market success and build strong, lasting
+          communities.
+        </li>
+        <li>
+          <strong>Custom Solutions:</strong> Every project is unique. We tailor
+          our services to your specific needs, ensuring you receive the support
+          that aligns with your goals.
+        </li>
+      </ul>
     </div>
+  );
+
+  return (
+    <div className={`modal ${show ? "show" : ""}`} onClick={onClose}>
+      {modalContent}
+    </div>
+  );
+};
+
+const Services = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const openModal = () => {
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+  };
+
+  return (
+    <section id="services">
+      <div className="services-container">
+        <h2 className="services-heading">Services We Offer</h2>
+        <div className="services container">
+          <div className="service-box">
+            <div className="service-icon">
+              <FontAwesomeIcon color="green" icon={faUser} size="4x" />
+            </div>
+            <div className="service-details">
+              <h3>Market Making</h3>
+              <p>
+                Our team of experienced market makers leverage cutting-edge
+                technology and market insights to provide liquidity and optimize
+                trading for your crypto project.
+              </p>
+            </div>
+          </div>
+          <div className="service-box">
+            <div className="service-icon">
+              <FontAwesomeIcon color="green" icon={faGlobe} size="4x" />
+            </div>
+            <div className="service-details ">
+              <h3>Exchange Listing</h3>
+              <p>
+                Whether you're a new project looking to gain exposure or an
+                established token seeking broader market access, our expertise
+                ensures a seamless listing process.
+              </p>
+            </div>
+          </div>
+          <div className="service-box">
+            <div className="service-icon">
+              <FontAwesomeIcon color="green" icon={faBullseye} size="4x" />
+            </div>
+            <div className="service-details">
+              <h3>Strategic Marketing</h3>
+              <p>
+                In a crowded crypto landscape, effective marketing is key to
+                standing out. From social media campaigns to community building,
+                we've got you covered.
+              </p>
+            </div>
+          </div>
+          <div className="service-box">
+            <div className="service-icon">
+              <FontAwesomeIcon color="green" icon={faGavel} size="4x" />
+            </div>
+            <div className="service-details">
+              <h3>Legal Advisory</h3>
+              <p>
+                Our legal experts specialize in crypto and blockchain
+                regulations. We provide guidance to ensure your project complies
+                with the ever-evolving legal framework.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* "Why choose us?" button */}
+        <button
+          onClick={openModal}
+          className="cta-button"
+          style={{ marginTop: "40px" }}
+        >
+          Why Choose us?
+        </button>
+
+        {/* Render the modal based on showModal state */}
+        <WhyChooseUsModal show={showModal} onClose={closeModal} />
+      </div>
+    </section>
   );
 };
 
