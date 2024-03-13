@@ -6,7 +6,7 @@ const Home = () => {
       <div className="back-height">
         <div className="center-text center-box">
           <h1 className="animate__animated animate__slideInLeft">
-            WELCOME to <span>Contrarion</span> Technologies
+            WELCOME to <span>Contrarian</span> Technologies
           </h1>
           <p className="animate__animated animate__slideInRight">
             Your Gateway to Success in the Emerging Crypto World

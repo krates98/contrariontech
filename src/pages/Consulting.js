@@ -50,17 +50,17 @@ const Consulting = () => {
               <img src={expertImage} alt="Expert" />
             </div>
             <div className="experts-cta">
-              <h3>Our Experts</h3>
+              <h3>Our CTO</h3>
               <p>
-                In the intricate tapestry of business consulting, expertise is
-                the thread that brings clarity to complexity. At the heart of
-                our consulting division are our experts, a distinguished group
-                of individuals whose depth of knowledge and vast experience
-                stand as beacons of guidance. Each conversation with them is not
-                just an exchange of information, but a step closer to refined
-                strategies and actionable insights. Their wisdom has been honed
-                through years of navigating challenges, foreseeing
-                opportunities, and crafting solutions that resonate.
+                In the intricate and rapidly evolving world of cryptocurrency
+                and market making, aligning cutting-edge technology with
+                visionary leadership is crucial. Our CTO, Kushagra Srivastava,
+                embodies this principle, skillfully translating the visionary
+                foresight of our CEO into tangible realities that navigate the
+                complex structures of market making to fruition. With an astute
+                intellect and deep understanding of the nuanced demands of
+                cryptocurrency services, Kushagra stands as a beacon of
+                innovation and strategic prowess.
               </p>
               <button
                 onClick={() => openModal("Talk To Our Experts")} // Match the capitalization
